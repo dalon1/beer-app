@@ -1,0 +1,9 @@
+<h2>Beers</h2>
+
+<div *ngFor="let beer of beers">
+    <h4>{{ beer.name }}</h4>
+    <img width="200" src="{{ beer.image }}" alt="{{ beer.name }} picture">
+    <p>{{ beer.description }}</p>
+    <p>{{ beer.alcohol }} @ {{ beer.price | currency }}</p>
+    <button>Add</button>
+</div>
