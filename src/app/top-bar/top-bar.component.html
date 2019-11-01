@@ -1,7 +1,13 @@
-<a [routerLink]="['/']">
-    <h1>My Store</h1>
-</a>
+<nav class="navbar navbar-light bg-light">
+    <!-- logo -->
+    <a class="navbar-brand" href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlFXCvdcXTvq5_wzF-cOJQYS6EyCVhs4h6anU1qWU6TXHRfy-B" width="45" height="30" class="d-inline-block align-top" alt="">
+    Dannel Beer Store
+    </a>
 
-<a [routerLink]="['/']" class="button fancy-button">
-    <i class="material-icons">shopping_cart</i>Checkout
-</a>
+    <!-- search form -->
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search for beer!" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
