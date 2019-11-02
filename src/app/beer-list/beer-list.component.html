@@ -2,17 +2,17 @@
     <h2>Beers</h2>
     <div class="row">
         <div class="col-md-3 col-sm-4" *ngFor="let beer of beers" width="25%">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 13.5rem;">
                 <div class="card-header">
                     {{ beer.style }}
                 </div>
-            <img src="{{beer.image}}" class="card-img-top" alt="{{beer.name}} picture">
+            <img src="{{beer.image}}" class="card-img-top" alt="{{beer.name}} picture" style="max-height: 12rem;">
             <div class="card-body">
                 <h5 class="card-title">{{beer.name}}</h5>
                 <p class="card-text">{{beer.description}}</p>
-                <span class="badge badge-warning">{{beer.alcohol}}</span>
-                <span class="badge badge-dark">{{beer.price | currency}}</span><br>
-                <button type="button" class="btn btn-outline-primary btn-sm">Add</button>
+                <span class="badge badge-warning">{{beer.alcohol}}</span>&nbsp;
+                <span class="badge badge-dark">{{beer.price | currency}}</span>
+                <button style="float: right" type="button" class="btn btn-outline-primary btn-sm">Add</button>
             </div>
             </div>
         </div>
