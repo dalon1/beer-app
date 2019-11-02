@@ -8,4 +8,5 @@ import { beers } from '../db/beers'
 })
 export class BeerListComponent {
     beers = beers;
+    constructor() {}
 }
